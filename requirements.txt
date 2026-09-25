@@ -1,0 +1,32 @@
+# --- Génération de données synthétiques ---
+faker>=25.0
+numpy>=1.26
+pandas>=2.2
+
+# --- Streaming ---
+kafka-python>=2.0.2
+pyspark>=3.5,<4.0
+
+# --- Stockage ---
+psycopg2-binary>=2.9
+sqlalchemy>=2.0
+
+# --- Machine Learning ---
+scikit-learn>=1.4
+xgboost>=2.0
+
+# --- Transformation (dbt) ---
+dbt-postgres>=1.8
+
+# --- Analyse ---
+jupyter>=1.0
+matplotlib>=3.8
+seaborn>=0.13
+
+# --- Qualité / configuration ---
+python-dotenv>=1.0
+pytest>=8.0
+ruff>=0.5
+
+# Note : Airflow n'est pas installé dans le venv local,
+# il tourne dans Docker (voir README > Roadmap).

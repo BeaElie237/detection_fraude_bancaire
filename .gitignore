@@ -1,0 +1,56 @@
+# --- Environnement Python ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Secrets ---
+.env
+*.pem
+*.key
+
+# --- Données (générées localement, jamais versionnées) ---
+data/raw/*
+data/processed/*
+data/synthetic/*
+!data/**/.gitkeep
+
+# --- Spark / Kafka / checkpoints ---
+spark-warehouse/
+metastore_db/
+derby.log
+checkpoints/
+*.parquet
+
+# --- Modèles ML entraînés ---
+fraud_detection/models/*
+!fraud_detection/models/.gitkeep
+
+# --- dbt ---
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# --- Airflow ---
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Power BI (fichiers temporaires / verrous) ---
+~$*.pbix
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
